@@ -1,0 +1,178 @@
+/* ===== BASE MAP ===== */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* ===== POPUP BASE ===== */
+.mapboxgl-popup-content {
+  border-radius: 12px;
+  padding: 12px;
+  max-width: 320px; /* DEFAULT SIZE */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ===== LAYOUT ===== */
+
+.popup-container {
+  display: flex;
+  gap: 12px;
+}
+
+/* Vertical (default) */
+.popup-wrapper.vertical .popup-container {
+  flex-direction: column;
+}
+
+/* Horizontal */
+.popup-wrapper.horizontal .popup-container {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/* ===== IMAGE ===== */
+
+/* Vertical image */
+.popup-wrapper.vertical .popup-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Horizontal image */
+.popup-wrapper.horizontal .popup-image {
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* ===== TEXT ===== */
+
+.popup-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* KEY FIX */
+.popup-wrapper.horizontal .popup-text {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ===== TYPOGRAPHY ===== */
+
+.popup-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.popup-artist {
+  font-size: 13px;
+  color: #2a9d8f;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.popup-description {
+  font-size: 12.5px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.popup-location {
+  font-size: 12.5px;
+  color: #666;
+  margin-top: 6px;
+}
+
+.popup-link {
+  display: inline-block;
+  margin-top: 6px;
+  color: #0077ff;
+  text-decoration: underline;
+  font-size: 12.5px;
+}
+
+/* filter */
+
+.filter-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.filter-container button {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.filter-btn {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #eee;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+/* Hover */
+.filter-btn:hover {
+  opacity: 0.8;
+}
+
+/* ACTIVE BASE */
+.filter-btn.active {
+  color: white;
+  transform: scale(1.05);
+}
+
+/* 🎨 MATCH EACH CATEGORY COLOR */
+
+.filter-btn[data-category="musician"].active {
+  background: #1d3557;
+}
+
+.filter-btn[data-category="sculpture"].active {
+  background: #e63946;
+}
+
+.filter-btn[data-category="painting"].active {
+  background: #f4a261;
+}
+
+.filter-btn[data-category="drawing"].active {
+  background: #2a9d8f;
+}
+
+.filter-btn[data-category="graffiti"].active {
+  background: #9b5de5;
+}
+
+.filter-btn[data-category="photography"].active {
+  background: #264653;
+}
+
+/* ALL button */
+.filter-btn[data-category="all"].active {
+  background: #333;
+}
