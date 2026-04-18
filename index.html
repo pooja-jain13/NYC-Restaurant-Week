@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>NYC Public Art Map</title>
+<title>NYC Resturant Week</title>
 
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 
@@ -50,11 +50,9 @@ const artData = {
 "type": "Feature",
 "properties": {
 "title": "The Baayfalls",
-"artist": "Jordan Casteel",
-"description": "“The Baayfalls” (2017/2019) is a 1,400-square-foot mural by Jordan Casteel on NYC’s High Line, portraying Senegalese siblings Fallou and Baaye Demba Sow of the Baye Fall sect, highlighting Black community and everyday life.",
-"image": "https://i.imgur.com/ArzWaqw.jpeg",
-"location": "New York, NY 10011",
-"artistLink": "https://www.jordancasteel.com/",
+"cuisine": "Jordan Casteel",
+"views": 4500000,
+"videos": ["https://www.tiktok.com/@nycfood/video/123", "https://www.tiktok.com/@eats/video/456"],
 "category": "painting"
 },
 "geometry": { "type": "Point", "coordinates": [-74.0048, 40.7480] }
@@ -65,7 +63,7 @@ const artData = {
 "properties": {
 "title": "Unity",
 "artist": "Hank Willis Thomas",
-"description": "Unity (2019) is a 22.5-foot bronze sculpture by Hank Willis Thomas in Downtown Brooklyn, symbolizing community and ambition through a raised, pointing arm inspired by the Statue of Liberty and basketball culture.",
+"description": "Unity inspired by the Statue of Liberty and basketball culture.",
 "image": "https://i.imgur.com/58wELhI.jpeg",
 "location": "271 Cadman Plaza E, Brooklyn, NY 11202",
 "artistLink": "https://hankwillisthomas.com/",
@@ -79,7 +77,7 @@ const artData = {
 "properties": {
 "title": "Go",
 "artist": "Kehinde Wiley",
-"description": "Go (2020) by Kehinde Wiley is an 85-foot stained-glass ceiling installation in Moynihan Train Hall, depicting young Black New Yorkers breakdancing against a sky-inspired backdrop, blending Renaissance influences with themes of movement, joy, and survival.",
+"description": "Go (2020) by Kehinde Wiley themes of movement, joy, and survival.",
 "image": "https://i.imgur.com/Js1BhOE.jpeg",
 "location": "350 W 33rd St, New York, NY 10001",
 "artistLink": "https://kehindewiley.com/",
@@ -93,7 +91,7 @@ const artData = {
 "properties": {
 "title": "Eyes on the Street",
 "artist": "Jamel Shabazz",
-"description": "Eyes on the Street (1980–2020) is a 40-year retrospective of Jamel Shabazz, showcasing his iconic photos of NYC street life, highlighting fashion, community, and the dignity of everyday people—especially in 1980s Brooklyn.",
+"description": "Eyes on the Street (1980–2020) is of everyday people—especially in 1980s Brooklyn.",
 "artistLink": "https://www.instagram.com/jamelshabazz/",
 "image": "https://i.imgur.com/RkN3q3H.png",
 "category": "photography"
@@ -106,7 +104,7 @@ const artData = {
 "properties": {
 "title": "Brick House",
 "artist": "Simone Leigh",
-"description": "Brick House (2019) is a 16-foot bronze sculpture by Simone Leigh on the High Line, blending African architectural forms with the body of a Black woman to celebrate Black femininity, resilience, and cultural heritage.",
+"description": "Brick House (2019) is and cultural heritage.",
 "image": "https://i.imgur.com/Mu4fPVV.jpeg",
 "location": "New York, NY 10011",
 "artistLink": "https://www.instagram.com/simoneyvetteleigh/",
@@ -120,7 +118,7 @@ const artData = {
 "properties": {
 "title": "The Death of Graffiti",
 "artist": "Lady Pink",
-"description": "Lady Pink was a leading figure in NYC’s 1980s subway graffiti scene, turning trains into “rolling canvases.” Her The Death of Graffiti (1982) reflects the era and marks graffiti’s shift into the gallery world.",
+"description": "Lady Pink into the gallery world.",
 "image": "https://i.imgur.com/ofwyQ35.jpeg",
 "artistLink": "https://www.ladypinknyc.com/",
 "category": "graffiti"
@@ -133,7 +131,7 @@ const artData = {
 "properties": {
 "title": "Whole Car Graffiti",
 "artist": "Cekis",
-"description": "Cekis was part of NYC’s late 1970s–80s subway graffiti movement, known for “whole car” pieces that turned trains into colorful moving canvases, often painted at Sunnyside Yard in Queens.",
+"description": "Cekis was in Queens.",
 "image": "https://i.imgur.com/q4GiZ3H.jpeg",
 "artistLink": "https://elcekis.com/",
 "category": "graffiti"
@@ -146,7 +144,7 @@ const artData = {
 "properties": {
 "title": "Houston Bowery Wall",
 "artist": "Mata Ruda",
-"description": "Mata Ruda created a bold geometric mural at the Houston Bowery Wall, using vibrant colors and abstract patterns to reflect the evolution of NYC street art from graffiti to large-scale murals.",
+"description": "Mata Ruda s.",
 "image": "https://i.imgur.com/LSc1Irv.jpeg",
 "location": "76 E Houston St, New York, NY 10012",
 "artistLink": "https://www.instagram.com/mataruda/",
@@ -160,7 +158,7 @@ const artData = {
 "properties": {
 "title": "Tar Beach",
 "artist": "Faith Ringgold",
-"description": "Faith Ringgold is a Harlem-born artist known for blending painting, quilting, and storytelling. Tar Beach tells the story of a young Black girl imagining freedom while lying on a Harlem rooftop.",
+"description": "Faith Ringgold is a Harlem-born.",
 "image": "https://i.imgur.com/wbiVfvK.jpeg",
 "location": "1071 5th Ave, New York, NY 10128",
 "artistLink": "https://faithringgold.com/",
@@ -174,7 +172,7 @@ const artData = {
 "properties": {
 "title": "SAMO Graffiti",
 "artist": "Jean-Michel Basquiat",
-"description": "Jean-Michel Basquiat began as part of the graffiti duo SAMO, writing cryptic phrases across downtown Manhattan in the late 1970s. His work bridged street art and fine art, becoming one of the most influential voices in contemporary art.",
+"description": "Jean-Michel Basquiat .",
 "image": "https://i.imgur.com/L8pAwA7.jpeg",
 "artistLink": "https://www.basquiat.com/",
 "category": "graffiti"
@@ -187,7 +185,7 @@ const artData = {
 "properties": {
 "title": "Welling Court Mural",
 "artist": "Lady Aiko",
-"description": "Lady Aiko creates layered stencil murals that blend Japanese pop aesthetics with NYC street art traditions, and her work is a highlight of the Welling Court mural district.",
+"description": "Lady Aiko creates layered stencil",
 "image": "https://i.imgur.com/AIrPbhJ.png",
 "location": "11-59 Welling Court, Astoria, NY 11102",
 "artistLink": "https://ladyaiko.com/",
@@ -201,7 +199,7 @@ const artData = {
 "properties": {
 "title": "Oculus Installation",
 "artist": "Shantell Martin",
-"description": "Shantell Martin is known for large black-and-white line drawings that explore identity and storytelling through simple, expressive visuals.",
+"description": "Shantell Martin is ",
 "location": "185 Greenwich St, New York, NY 10007",
 "image": "https://i.imgur.com/xfPjsdQ.jpeg",
 "artistLink": "https://shantellmartin.art/work/",
@@ -215,7 +213,7 @@ const artData = {
 "properties": {
 "title": "We Come in Peace",
 "artist": "Huma Bhabha",
-"description": "Bhabha’s sculpture explores themes of history, power, and human conflict. The monumental figure at the Met became one of the museum’s most talked-about contemporary installations.",
+"description": "Bhabha’s sculpture explores .",
 "location": "1000 5th Ave, New York, NY 10028",
 "image": "https://i.imgur.com/Q7mom2L.jpeg",
 "category": "sculpture"
@@ -232,7 +230,7 @@ const artData = {
 "properties": {
 "title": "Empire State of Mind",
 "artist": "Alicia Keys",
-"description": "Alicia Keys grew up in New York and became one of the most recognizable voices representing the city. Her music often references NYC culture and identity.",
+"description": "Alicia Key culture and identity.",
 "link": "https://www.youtube.com/watch?v=vk6014HuxcE",
 "artistLink": "https://www.aliciakeys.com/",
 "image": "https://i.imgur.com/jv3Mtfd.jpeg",
@@ -249,7 +247,7 @@ const artData = {
 "properties": {
 "title": "Illmatic",
 "artist": "Nas",
-"description": "Nas is one of the most respected hip-hop artists in history. His album Illmatic tells vivid stories about growing up in Queensbridge.",
+"description": "Nas is about growing up in Queensbridge.",
 "link": "https://www.youtube.com/playlist?list=PLrbFUdbfepXUKrZo3oi-53e-99J72nJyD",
 "artistLink": "https://www.nasirjones.com/",
 "image": "https://i.imgur.com/vex549x.jpeg",
@@ -266,7 +264,7 @@ const artData = {
 "properties": {
 "title": "Nobody",
 "artist": "Mitski",
-"description": "Mitski developed her music career while studying at SUNY Purchase and performing around NYC’s indie music venues.",
+"description": "Mitski  music venues.",
 "link": "https://www.youtube.com/watch?v=qooWnw5rEcI",
 "artistLink": "https://www.mitski.com/",
 "image": "https://i.imgur.com/aKmIjVH.jpeg",
@@ -283,7 +281,7 @@ const artData = {
 "properties": {
 "title": "My Vag",
 "artist": "Awkwafina",
-"description": "Awkwafina gained viral attention through her comedic rap songs before transitioning into acting and film.",
+"description": "Awkwafina  and film.",
 "link": "https://www.youtube.com/watch?v=z726OPwCnjE",
 "artistLink": "https://awkwafina.com/",
 "image": "https://i.imgur.com/k8LyVS9.jpeg",
@@ -300,7 +298,7 @@ const artData = {
 "properties": {
 "title": "Tomboy",
 "artist": "Princess Nokia",
-"description": "Princess Nokia is an independent rapper known for blending hip-hop, punk, and experimental sounds while representing Harlem and Latin culture.",
+"description": "Priculture.",
 "link": "https://www.youtube.com/watch?v=AH-LyInSNYw",
 "artistLink": "https://www.instagram.com/princessnokia/?hl=en",
 "image": "https://i.imgur.com/eU7F0S1.jpeg",
@@ -317,7 +315,7 @@ const artData = {
 "properties": {
 "title": "Honey",
 "artist": "Raveena",
-"description": "Raveena creates dreamy R&B and soul music influenced by South Asian culture and spirituality.",
+"description": "Raveena spirituality.",
 "link": "https://www.youtube.com/watch?v=xy4RebilRSI",
 "artistLink": "https://www.raveenaaurora.com/",
 "image": "https://i.imgur.com/QQRtzQU.jpeg",
@@ -334,7 +332,7 @@ const artData = {
 "properties": {
 "title": "Raingurl",
 "artist": "Yaeji",
-"description": "Yaeji is an electronic musician and DJ known for mixing house music with soft vocals in Korean and English.",
+"description": "Yaeji is Korean and English.",
 "link": "https://www.youtube.com/watch?v=_3T8KznhThQ",
 "artistLink": "https://yaeji.com/",
 "image": "https://i.imgur.com/TzdFG2m.jpeg",
@@ -351,7 +349,7 @@ const artData = {
 "properties": {
 "title": "Selfie",
 "artist": "Chynna",
-"description": "Chynna was an underground rapper and former model who became known for dark, experimental hip-hop music.",
+"description": "Chynna hip-hop music.",
 "link": "https://www.youtube.com/watch?v=2DPHaWiHr7g",
 "artistLink": "https://www.instagram.com/chizzyano/",
 "image": "https://i.imgur.com/AGMKphL.jpeg",
@@ -368,7 +366,7 @@ const artData = {
 "properties": {
 "title": "Basketball & Seinfeld",
 "artist": "Your Old Droog",
-"description": "Your Old Droog gained attention in the underground rap scene for his lyrical style reminiscent of classic NYC hip-hop.",
+"description": "Your  hip-hop.",
 "link": "https://www.youtube.com/watch?v=xrHO-lkSV0Y",
 "artistLink": "https://yourolddroog.com/",
 "image": "https://i.imgur.com/tjeMs1e.jpeg",
@@ -385,7 +383,7 @@ const artData = {
 "properties": {
 "title": "Weight of the World",
 "artist": "MIKE",
-"description": "MIKE is a major voice in the underground NYC hip-hop community and is known for introspective, experimental rap.",
+"description": "MIKE is a major rap.",
 "link": "https://www.youtube.com/playlist?list=PL3UG6Zf2hssfKDCeVfxe0Oqlziu-Inwcu",
 "image": "https://i.imgur.com/xuYoFfB.jpeg",
 "category": "musician"
