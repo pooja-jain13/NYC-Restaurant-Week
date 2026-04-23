@@ -69,13 +69,13 @@ body {
 
 /* ===== TYPOGRAPHY ===== */
 
-.popup-title {
+.popup-name {
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 4px;
 }
 
-.popup-artist {
+.popup-cuisine {
   font-size: 13px;
   color: #2a9d8f;
   font-weight: 600;

@@ -147,8 +147,8 @@ const artData = {
 {
 "type": "Feature",
 "properties": {
-"title": "Phayul",
-"artist": "Indian",
+"name": "Phayul",
+"cuisine": "Indian",
 "views": 56233,
 "location": "37-65 74th St., Jackson Heights, NY 11372",
 "menuLink": "",
@@ -452,8 +452,8 @@ new mapboxgl.Popup()
   <div class="popup-container">
     <img class="popup-image" src="${props.image}">
     <div class="popup-text">
-      <div class="popup-title">${props.title}</div>
-      <div class="popup-artist">${props.artist}</div>
+      <div class="popup-name">${props.name}</div>
+      <div class="popup-cuisine">${props.cuisine}</div>
       <div class="popup-description">${props.description}</div>
       <div class="popup-location">${props.location || ''}</div>
       ${props.link ? `<a href="${props.link}" target="_blank" class="popup-link">Listen to Song</a>` : ''}
