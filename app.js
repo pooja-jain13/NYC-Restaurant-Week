@@ -19,6 +19,7 @@ const restaurantData = {
 "type": "Feature",
 "properties": {
 "title": "Atomic Wings",
+"views": 300,
 "category": "wings",
 "location": "1227 Fulton St, Brooklyn, NY",
 "videos": [
@@ -26,7 +27,7 @@ const restaurantData = {
 "url": "https://www.tiktok.com/@solissecrets/video/7562976876096916767",
 "author": "solissecrets",
 "caption": "Wanna know a secret?",
-"likes": 357
+"likes": 557
 },
 {
 "url": "https://www.tiktok.com/@eliteeatswithp/video/7590125551122156814",
@@ -43,6 +44,7 @@ const restaurantData = {
 "type": "Feature",
 "properties": {
 "title": "Cheese Grille",
+"views": 191,
 "category": "comfort",
 "location": "188 Allen St, NYC",
 "videos": [
@@ -61,6 +63,7 @@ const restaurantData = {
 "type": "Feature",
 "properties": {
 "title": "Calexico",
+"views": 240,
 "category": "mexican",
 "location": "Greenpoint, Brooklyn",
 "videos": [
@@ -94,7 +97,13 @@ id: 'restaurant-points',
 type: 'circle',
 source: 'restaurants',
 paint: {
-'circle-radius': 8,
+      'circle-radius': [
+        'interpolate',
+        ['linear'],
+        ['get', 'views'], // Access the "views" property from your data
+        0, 2,           // If views are 0, radius is 2px
+        1000, 20           // If views are 1000, radius grows to 20px
+      ],
 'circle-color': [
 'match',
 ['get', 'category'],
