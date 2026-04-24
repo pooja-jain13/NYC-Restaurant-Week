@@ -1,107 +1,17 @@
-/* ===== BASE MAP ===== */
 body {
-  margin: 0;
-  padding: 0;
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
 }
 
 #map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
+position: absolute;
+top: 0;
+bottom: 0;
+width: 100%;
 }
 
-/* ===== POPUP BASE ===== */
-.mapboxgl-popup-content {
-border-radius: 12px;
-padding: 12px;
-max-width: 320px;
-}
-/* ===== LAYOUT ===== */
-
-.popup-container {
-  display: flex;
-  gap: 12px;
-}
-
-/* Vertical (default) */
-.popup-wrapper.vertical .popup-container {
-  flex-direction: column;
-}
-
-/* Horizontal */
-.popup-wrapper.horizontal .popup-container {
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-/* ===== IMAGE ===== */
-
-/* Vertical image */
-.popup-wrapper.vertical .popup-image {
-  width: 100%;
-  border-radius: 8px;
-}
-
-/* Horizontal image */
-.popup-wrapper.horizontal .popup-image {
-  width: 140px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
-}
-
-/* ===== TEXT ===== */
-
-.popup-text {
-  display: flex;
-  flex-direction: column;
-}
-
-/* KEY FIX */
-.popup-wrapper.horizontal .popup-text {
-  flex: 1;
-  min-width: 0;
-}
-
-/* ===== TYPOGRAPHY ===== */
-
-.popup-title {
-font-weight: bold;
-font-size: 16px;
-margin-bottom: 5px;
-}
-
-.popup-cuisine {
-  font-size: 13px;
-  color: #2a9d8f;
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-
-.popup-description {
-  font-size: 12.5px;
-  color: #333;
-  line-height: 1.4;
-}
-
-.popup-location {
-  font-size: 12.5px;
-  color: #666;
-  margin-top: 6px;
-}
-
-.popup-link {
-  display: inline-block;
-  margin-top: 6px;
-  color: #0077ff;
-  text-decoration: underline;
-  font-size: 12.5px;
-}
-
-/* filter */
-
+/* FILTERS */
 .filter-container {
 position: absolute;
 top: 10px;
@@ -113,14 +23,6 @@ border-radius: 10px;
 display: flex;
 gap: 6px;
 flex-wrap: wrap;
-}
-
-.filter-container button {
-  border: none;
-  padding: 6px 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 12px;
 }
 
 .filter-btn {
@@ -136,36 +38,31 @@ background: #333;
 color: white;
 }
 
-
-/* ACTIVE BASE */
-.filter-btn.active {
-  color: white;
-  transform: scale(1.05);
+/* POPUP */
+.mapboxgl-popup-content {
+border-radius: 12px;
+padding: 12px;
+max-width: 320px;
 }
 
-/* 🎨 MATCH EACH CATEGORY COLOR */
-
-.filter-btn[data-category="Mexican"].active {
-  background: #1d3557;
+.popup-title {
+font-weight: bold;
+font-size: 16px;
+margin-bottom: 5px;
 }
 
-.filter-btn[data-category="Italian"].active {
-  background: #e63946;
+.popup-location {
+font-size: 12px;
+color: gray;
+margin-bottom: 10px;
 }
 
-.filter-btn[data-category="Japanese/Sushi"].active {
-  background: #f4a261;
+/* TikTok cards */
+.tiktok-card {
+margin-bottom: 10px;
 }
 
-.filter-btn[data-category="American"].active {
-  background: #2a9d8f;
-}
-
-.filter-btn[data-category="Indian"].active {
-  background: #9b5de5;
-}
-
-/* ALL button */
-.filter-btn[data-category="all"].active {
-  background: #333;
+.tiktok-meta {
+font-size: 12px;
+margin-top: 4px;
 }
