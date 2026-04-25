@@ -421,6 +421,130 @@ const restaurantData = {
 {
 "type": "Feature",
 "properties": {
+"title": "Arepa Lady",
+"views": 17156,
+"category": "Colombian",
+"location": "77-17 37th Ave, Jackson Heights, NY 11372",
+"videos": [
+{
+"url": "https://www.tiktok.com/@good.bytes/video/7336594457694850346",
+"author": "good.bytes",
+"caption": "Wanna know a secret?",
+"likes": 1423
+},
+{
+"url": "https://www.tiktok.com/@snackpass/video/7331132950383234346",
+"author": "snackpass",
+"caption": "Crispy wings 🔥",
+"likes": 725
+},
+{
+"url": "https://www.tiktok.com/@comiendoenla/video/7506370543516388650",
+"author": "comiendoenla",
+"caption": "Crispy wings 🔥",
+"likes": 1122
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [-73.8882711 , 40.7494972] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Mama’s Too",
+"views": 1985067,
+"category": "Italian",
+"location": "2750 Broadway, New York, NY 10025",
+"videos": [
+{
+"url": "https://www.tiktok.com/@jacksdiningroom/video/7369992676709682478",
+"author": "jacksdiningroom",
+"caption": "Wanna know a secret?",
+"likes": 514400
+},
+{
+"url": "https://www.tiktok.com/@briancantstopeating/video/7414160028606762286",
+"author": "briancantstopeating",
+"caption": "Crispy wings 🔥",
+"likes": 29300
+},
+{
+"url": "https://www.tiktok.com/@imma_eat_this/video/7494311832497311018",
+"author": "imma_eat_this",
+"caption": "Crispy wings 🔥",
+"likes": 4788
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [-73.967590 , 40.800832] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Lhasa Fast Food",
+"views": 701413,
+"category": "Chinese",
+"location": "76-03 37th Ave, Jackson Heights, NY 11372",
+"videos": [
+{
+"url": "https://www.tiktok.com/@hungryartistny/video/7206444991915461934",
+"author": "hungryartistny",
+"caption": "Wanna know a secret?",
+"likes": 206
+},
+{
+"url": "https://www.tiktok.com/@eatingwithrobert/video/7485864087084109086",
+"author": "eatingwithrobert",
+"caption": "Crispy wings 🔥",
+"likes": 23900
+},
+{
+"url": "https://www.tiktok.com/@thewildamalia/video/7371213644639538449",
+"author": "thewildamalia",
+"caption": "Crispy wings 🔥",
+"likes": 816
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [-73.889748 , 40.749354] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Atomic Wings",
+"views": 367305,
+"category": "American (Traditional)",
+"location": "Smorgasburg 90 Kent Ave, Brooklyn, NY, 11211",
+"videos": [
+{
+"url": "https://www.tiktok.com/@solissecrets/video/7562976876096916767",
+"author": "solissecrets",
+"caption": "Wanna know a secret?",
+"likes": 357
+},
+{
+"url": "https://www.tiktok.com/@eliteeatswithp/video/7590125551122156814",
+"author": "eliteeatswithp",
+"caption": "Crispy wings 🔥",
+"likes": 563
+},
+{
+"url": "https://www.tiktok.com/@cookiesncreameats/video/7233898253564022059",
+"author": "cookiesncreameats",
+"caption": "Crispy wings 🔥",
+"likes": 145
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [-73.9625824 , 40.7210981] }
+},
+
+{
+"type": "Feature",
+"properties": {
 "title": "Cheese Grille",
 "views": 83394,
 "category": "comfort",
@@ -497,6 +621,9 @@ paint: {
 'Belgian', '#c8aeff',
 'Japanese/Sushi', '#fffd6b',
 'Eastern European', '#ff5fdc',
+'Colombian', '#7b1616',
+'Chinese', '#bfff00',
+'American (Traditional)', '#ff7700',
 '#888'
 ],
 'circle-stroke-width': 2,
