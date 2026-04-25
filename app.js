@@ -269,7 +269,7 @@ paint: {
 'match',
 ['get', 'category'],
 'Middle Eastern', '#e63946',
-'mexican', '#2a9d8f',
+'Mexican', '#2a9d8f',
 'comfort', '#f4a261',
 'Italian', '#5d6eeb',
 'Caribbean', '#b83be9',
