@@ -19,7 +19,7 @@ const restaurantData = {
 "type": "Feature",
 "properties": {
 "title": "Atomic Wings",
-"views": 300,
+"views": 367305,
 "category": "wings",
 "location": "1227 Fulton St, Brooklyn, NY",
 "videos": [
@@ -44,7 +44,7 @@ const restaurantData = {
 "type": "Feature",
 "properties": {
 "title": "Cheese Grille",
-"views": 191,
+"views": 83394,
 "category": "comfort",
 "location": "188 Allen St, NYC",
 "videos": [
@@ -101,8 +101,8 @@ paint: {
         'interpolate',
         ['linear'],
         ['get', 'views'], // Access the "views" property from your data
-        0, 2,           // If views are 0, radius is 2px
-        1000, 20           // If views are 1000, radius grows to 20px
+        1000, 2,           // If views are 0, radius is 2px
+        2000000, 60           // If views are 1000, radius grows to 20px
       ],
 'circle-color': [
 'match',
