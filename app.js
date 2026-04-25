@@ -804,6 +804,38 @@ paint: {
 }
 });
 
+function openModal(videos) {
+
+const modal = document.getElementById('videoModal');
+const carousel = document.getElementById('carousel');
+
+carousel.innerHTML = '';
+
+videos.forEach(video => {
+
+const videoID = video.url.split('/video/')[1];
+
+carousel.innerHTML += `
+<div class="carousel-video">
+  <iframe 
+    src="https://www.tiktok.com/embed/v2/${videoID}" 
+    width="100%" 
+    height="300"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+  <div>@${video.author} ❤️ ${video.likes}</div>
+</div>
+`;
+});
+
+modal.style.display = 'block';
+}
+
+function closeModal() {
+document.getElementById('videoModal').style.display = 'none';
+}
+
 /* =========================
    POPUP (TIKTOK)
 ========================= */
@@ -813,43 +845,40 @@ map.on('click', 'restaurant-points', (e) => {
 const props = e.features[0].properties;
 const coords = e.features[0].geometry.coordinates.slice();
 
-// 🔥 FIX: convert string → array
-const videos = JSON.parse(props.videos);
+const firstVideo = props.videos[0];
+const videoID = firstVideo.url.split('/video/')[1];
 
-let videosHTML = '';
-
-videos.forEach(video => {
-videosHTML += `
-<div class="tiktok-card">
-  <iframe 
-    src="https://www.tiktok.com/embed/v2/${video.url.split('/video/')[1]}" 
-    width="100%" 
-    height="200" 
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-  <div class="tiktok-meta">
-    <strong>@${video.author}</strong><br>
-    ${video.caption || ''}<br>
-    ❤️ ${video.likes}
-  </div>
-</div>
-`;
-});
-
-new mapboxgl.Popup()
+const popup = new mapboxgl.Popup()
 .setLngLat(coords)
 .setHTML(`
 <div>
   <div class="popup-title">${props.title}</div>
   <div class="popup-location">${props.location}</div>
-  ${videosHTML}
+
+  <iframe 
+    src="https://www.tiktok.com/embed/v2/${videoID}" 
+    width="100%" 
+    height="220" 
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+
+  <button class="more-btn" id="moreBtn">
+    More Videos →
+  </button>
 </div>
 `)
 .addTo(map);
 
-});
+/* 🔥 PUT IT RIGHT HERE */
+setTimeout(() => {
+  const btn = document.getElementById('moreBtn');
+  if (btn) {
+    btn.onclick = () => openModal(props.videos);
+  }
+}, 100);
 
+});
 });
 
 /* =========================
