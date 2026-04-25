@@ -837,46 +837,84 @@ document.getElementById('videoModal').style.display = 'none';
 }
 
 /* =========================
-   POPUP (TIKTOK)
+   MODAL FUNCTIONS
+========================= */
+
+function openModal(videos) {
+  const modal = document.getElementById('videoModal');
+  const carousel = document.getElementById('carousel');
+
+  carousel.innerHTML = '';
+
+  videos.forEach(video => {
+    const videoID = video.url.split('/video/')[1];
+
+    carousel.innerHTML += `
+      <div class="carousel-video">
+        <iframe 
+          src="https://www.tiktok.com/embed/v2/${videoID}" 
+          width="100%" 
+          height="300"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+        <div>@${video.author} ❤️ ${video.likes}</div>
+      </div>
+    `;
+  });
+
+  modal.style.display = 'block';
+}
+
+function closeModal() {
+  document.getElementById('videoModal').style.display = 'none';
+}
+
+/* =========================
+   POPUP
 ========================= */
 
 map.on('click', 'restaurant-points', (e) => {
 
-const props = e.features[0].properties;
-const coords = e.features[0].geometry.coordinates.slice();
+  const props = e.features[0].properties;
+  const coords = e.features[0].geometry.coordinates.slice();
 
-const firstVideo = props.videos[0];
-const videoID = firstVideo.url.split('/video/')[1];
+  /* 🔥 IMPORTANT FIX */
+  const videos = JSON.parse(props.videos);
 
-const popup = new mapboxgl.Popup()
-.setLngLat(coords)
-.setHTML(`
-<div>
-  <div class="popup-title">${props.title}</div>
-  <div class="popup-location">${props.location}</div>
+  const firstVideo = videos[0];
+  const videoID = firstVideo.url.split('/video/')[1];
 
-  <iframe 
-    src="https://www.tiktok.com/embed/v2/${videoID}" 
-    width="100%" 
-    height="220" 
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
+  const popupNode = document.createElement('div');
 
-  <button class="more-btn" id="moreBtn">
-    More Videos →
-  </button>
-</div>
-`)
-.addTo(map);
+  popupNode.innerHTML = `
+    <div>
+      <div class="popup-title">${props.title}</div>
+      <div class="popup-location">${props.location}</div>
 
-/* 🔥 PUT IT RIGHT HERE */
-setTimeout(() => {
-  const btn = document.getElementById('moreBtn');
-  if (btn) {
-    btn.onclick = () => openModal(props.videos);
-  }
-}, 100);
+      <iframe 
+        src="https://www.tiktok.com/embed/v2/${videoID}" 
+        width="100%" 
+        height="220" 
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+
+      <button class="more-btn">
+        More Videos →
+      </button>
+    </div>
+  `;
+
+  /* ✅ Attach event BEFORE adding to map (better than setTimeout) */
+  popupNode.querySelector('.more-btn').onclick = () => {
+    openModal(videos);
+  };
+
+  new mapboxgl.Popup()
+    .setLngLat(coords)
+    .setDOMContent(popupNode) // 🔥 THIS avoids timing issues
+    .addTo(map);
 
 });
 });
