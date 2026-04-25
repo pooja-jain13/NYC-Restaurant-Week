@@ -63,7 +63,7 @@ const restaurantData = {
 "type": "Feature",
 "properties": {
 "title": "Calexico",
-"views": 240,
+"views": 1000,
 "category": "mexican",
 "location": "Greenpoint, Brooklyn",
 "videos": [
