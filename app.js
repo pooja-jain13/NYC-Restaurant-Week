@@ -101,7 +101,7 @@ paint: {
         'interpolate',
         ['linear'],
         ['get', 'views'], // Access the "views" property from your data
-        1000, 2,           // If views are 0, radius is 2px
+        1000, 10,           // If views are 0, radius is 2px
         2000000, 60           // If views are 1000, radius grows to 20px
       ],
 'circle-color': [
