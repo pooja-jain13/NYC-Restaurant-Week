@@ -113,7 +113,7 @@ const restaurantData = {
 "properties": {
 "title": "El Malecon",
 "views": 160244,
-"category": ["Caribbean", "Latin American"],
+"category": "Caribbean",
 "location": "4141 Broadway, New York, NY 10033",
 "videos": [
 {
@@ -384,7 +384,7 @@ const restaurantData = {
 }
 ]
 },
-"geometry": { "type": "Point", "coordinates": [73.9807367 , 40.7504423] }
+"geometry": { "type": "Point", "coordinates": [-73.9807367 , 40.7504423] }
 },
 
 {
