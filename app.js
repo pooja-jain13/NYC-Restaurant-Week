@@ -22,7 +22,7 @@ const restaurantData = {
 "views": 63921,
 "category": "Middle Eastern",
 "location": "124-11 Steinway St, Long Island City, NY 11103",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@devourpower/video/7231158637127847214",
 "author": "devourpower",
@@ -38,7 +38,7 @@ const restaurantData = {
 "author": "naw_sir",
 "likes": 1123
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.906470, 40.77196] }
 },
@@ -50,7 +50,7 @@ const restaurantData = {
 "views": 47576,
 "category": "Italian",
 "location": "1166 1st Ave, New York, NY 10065",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@alan_chengg/video/7543817135512980791",
 "author": "alan_chengg",
@@ -66,7 +66,7 @@ const restaurantData = {
 "author": "maria.guadagno",
 "likes": 9
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.959564, 40.762567] }
 },
@@ -78,7 +78,7 @@ const restaurantData = {
 "views": 465561,
 "category": "Caribbean",
 "location": "159-24 Hillside Ave., Jamaica, NY 11432",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@hungryartistny/video/7445068164905340191",
 "author": "hungryartistny",
@@ -94,7 +94,7 @@ const restaurantData = {
 "author": "shopwips",
 "likes": 28
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.801868, 40.707792] }
 },
@@ -106,7 +106,7 @@ const restaurantData = {
 "views": 160244,
 "category": "Caribbean",
 "location": "4141 Broadway, New York, NY 10033",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@priyas_plates/video/7591213033544764685?q=malecon%20restaurant%20nyc&t=17771360392841",
 "author": "priyas_plates",
@@ -122,7 +122,7 @@ const restaurantData = {
 "author": "food.and.footprints",
 "likes": 1621
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.938620, 40.846401] }
 },
@@ -134,7 +134,7 @@ const restaurantData = {
 "views": 137464,
 "category": "Delicatessen",
 "location": "1791 Hylan BlvdStaten Island, NY 10305",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@meals_by_cug/video/7080561315336621358",
 "author": "meals_by_cug",
@@ -150,7 +150,7 @@ const restaurantData = {
 "author": "ariemmmasgardencenter",
 "likes": 144
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-74.093421, 40.585503] }
 },
@@ -162,7 +162,7 @@ const restaurantData = {
 "views": 7804,
 "category": "Mexican",
 "location": "137 4th Ave, New York, NY 10003",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@eatsbynyc/video/7324830008042589482",
 "author": "eatsbynyc",
@@ -178,7 +178,7 @@ const restaurantData = {
 "author": "christinetao",
 "likes": 751
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.9896812, 40.7335742] }
 },
@@ -190,7 +190,7 @@ const restaurantData = {
 "views": 174648,
 "category": "Burgers",
 "location": "119 Avenue A, New York, NY 10009",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@beli_eats/video/7360853188079308078",
 "author": "beli_eats",
@@ -206,7 +206,7 @@ const restaurantData = {
 "author": "inkind.app",
 "likes": 34
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.983509 , 40.726484] }
 },
@@ -218,7 +218,7 @@ const restaurantData = {
 "views": 56233,
 "category": "Indian",
 "location": "37-65 74th St., Jackson Heights, NY 11372",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@consumingcouple/video/7081414015112514822",
 "author": "consumingcouple",
@@ -234,7 +234,7 @@ const restaurantData = {
 "author": "briancantstopeating",
 "likes": 17000
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.891349 , 40.7471617] }
 },
@@ -246,7 +246,7 @@ const restaurantData = {
 "views": 1351,
 "category": "Italian",
 "location": "600 E 187th St, Bronx, NY 10458",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@melogotjays/video/7353447347172478250",
 "author": "melogotjays",
@@ -262,7 +262,7 @@ const restaurantData = {
 "author": "enjoylifewithmichaela",
 "likes": 11
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.887591 , 40.855303] }
 },
@@ -274,7 +274,7 @@ const restaurantData = {
 "views": 173154,
 "category": "Belgian",
 "location": "128 MacDougal St, New York, NY 10012",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@beyond.the.square/video/7535862883024997646",
 "author": "beyond.the.square",
@@ -290,7 +290,7 @@ const restaurantData = {
 "author": "reluctantbites",
 "likes": 10100
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-74.0002813 , 40.7301222] }
 },
@@ -302,7 +302,7 @@ const restaurantData = {
 "views": 4717,
 "category": "Indian",
 "location": "73-10 37th Ave, Jackson Heights, NY 11372",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@sethimaan0/video/7492900424693959982",
 "author": "sethimaan0",
@@ -318,7 +318,7 @@ const restaurantData = {
 "author": "budsonthemove",
 "likes": 418
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.8923836 , 40.7487772] }
 },
@@ -330,7 +330,7 @@ const restaurantData = {
 "views": 6212,
 "category": "Japanese/Sushi",
 "location": "261 Madison Ave, New York, NY 10016",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@animayana_/video/7295494282549546282",
 "author": "animayana_",
@@ -346,7 +346,7 @@ const restaurantData = {
 "author": "newyorkbyjenny",
 "likes": 602
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.9807367 , 40.7504423] }
 },
@@ -358,7 +358,7 @@ const restaurantData = {
 "views": 65770,
 "category": "Eastern European",
 "location": "137 E Houston St, New York, NY 10002",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@hereinnyc/video/7210492073643101486",
 "author": "hereinnyc",
@@ -374,7 +374,7 @@ const restaurantData = {
 "author": "nyjewishweek",
 "likes": 23300
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.989809 , 40.722336] }
 },
@@ -386,7 +386,7 @@ const restaurantData = {
 "views": 17156,
 "category": "Colombian",
 "location": "77-17 37th Ave, Jackson Heights, NY 11372",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@good.bytes/video/7336594457694850346",
 "author": "good.bytes",
@@ -402,7 +402,7 @@ const restaurantData = {
 "author": "comiendoenla",
 "likes": 1122
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.8882711 , 40.7494972] }
 },
@@ -414,7 +414,7 @@ const restaurantData = {
 "views": 1985067,
 "category": "Italian",
 "location": "2750 Broadway, New York, NY 10025",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@jacksdiningroom/video/7369992676709682478",
 "author": "jacksdiningroom",
@@ -430,7 +430,7 @@ const restaurantData = {
 "author": "imma_eat_this",
 "likes": 4788
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.967590 , 40.800832] }
 },
@@ -442,7 +442,7 @@ const restaurantData = {
 "views": 701413,
 "category": "Chinese",
 "location": "76-03 37th Ave, Jackson Heights, NY 11372",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@hungryartistny/video/7206444991915461934",
 "author": "hungryartistny",
@@ -458,7 +458,7 @@ const restaurantData = {
 "author": "thewildamalia",
 "likes": 816
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.889748 , 40.749354] }
 },
@@ -470,7 +470,7 @@ const restaurantData = {
 "views": 367305,
 "category": "American (Traditional)",
 "location": "Smorgasburg 90 Kent Ave, Brooklyn, NY, 11211",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@solissecrets/video/7562976876096916767",
 "author": "solissecrets",
@@ -486,7 +486,7 @@ const restaurantData = {
 "author": "cookiesncreameats",
 "likes": 145
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.9625824 , 40.7210981] }
 },
@@ -498,7 +498,7 @@ const restaurantData = {
 "views": 121479,
 "category": "American (Traditional)",
 "location": "109 Eldridge StNew York, NY 10002",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@aboricualifeinusa/video/7443998288019344683",
 "author": "aboricualifeinusa",
@@ -514,7 +514,7 @@ const restaurantData = {
 "author": "foodtok368",
 "likes": 37100
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [ -73.9922251 , 40.7182218] }
 },
@@ -526,7 +526,7 @@ const restaurantData = {
 "views": 67103,
 "category": "Caribbean",
 "location": "661 Flatbush AveBrooklyn, NY 11225",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@itsyaboymikeofficial/video/7014980678605344005",
 "author": "itsyaboymikeofficial",
@@ -542,7 +542,7 @@ const restaurantData = {
 "author": "aprilheree_",
 "likes": 4392
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.9599946 , 40.6571284] }
 },
@@ -554,7 +554,7 @@ const restaurantData = {
 "views": 13045,
 "category": "American (Traditional)",
 "location": "620 8th Ave, New York, NY 10018",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@nycmuncher/video/7426769235117886763",
 "author": "nycmuncher",
@@ -570,7 +570,7 @@ const restaurantData = {
 "author": "joshuamichaell",
 "likes": 48
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.9903370 , 40.7562689] }
 },
@@ -582,7 +582,7 @@ const restaurantData = {
 "views": 59920,
 "category": "American (Traditional)",
 "location": "28 Greenwich Ave, New York, NY 10011",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@pritokayed/video/7503001700802792735",
 "author": "pritokayed",
@@ -598,7 +598,7 @@ const restaurantData = {
 "author": "diaryofamaterialgurl",
 "likes": 4615
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-74.0000164 , 40.7350283] }
 },
@@ -610,7 +610,7 @@ const restaurantData = {
 "views": 19933,
 "category": "Indian",
 "location": "112 MacDougal St, New York, NY 10012",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@vatscookin/video/7519300142730595614",
 "author": "vatscookin",
@@ -626,7 +626,7 @@ const restaurantData = {
 "author": "aman.archive",
 "likes": 78
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-74.0006936 , 40.7296527] }
 },
@@ -638,7 +638,7 @@ const restaurantData = {
 "views": 347223,
 "category": "Japanese / Sushi",
 "location": "1596 3rd Ave, New York, NY 10128",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@kenzmyers/video/7611621294920060191",
 "author": "kenzmyers",
@@ -654,7 +654,7 @@ const restaurantData = {
 "author": "brinks8939",
 "likes": 7582
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.9524897 , 40.7811956] }
 },
@@ -666,7 +666,7 @@ const restaurantData = {
 "views": 875267,
 "category": "Vietnamese",
 "location": "277C Grand St, New York, NY 10002",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@banhmi4.u/video/7555512028576681230",
 "author": "banhmi4.u",
@@ -682,7 +682,7 @@ const restaurantData = {
 "author": "grwm_a1ish1a22",
 "likes": 6
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.9927822 , 40.7176857] }
 },
@@ -694,7 +694,7 @@ const restaurantData = {
 "views": 49082,
 "category": "Southern",
 "location": "366 Metropolitan Ave, Brooklyn, NY 11211",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@briancantstopeating/video/7225787135310368046",
 "author": "briancantstopeating",
@@ -710,7 +710,7 @@ const restaurantData = {
 "author": "livefastdineyoung",
 "likes": 120
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.9558939 , 40.7139049] }
 },
@@ -722,14 +722,14 @@ const restaurantData = {
 "views": 83394,
 "category": "American (Traditional)",
 "location": "188 Allen St, NYC",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@cheesegrille/video/7192657732472786219",
 "author": "cheesegrille",
 "caption": "Celebrities visited 👀",
 "likes": 105
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [ -73.9885928, 40.7219476] }
 },
@@ -741,14 +741,14 @@ const restaurantData = {
 "views": 1000,
 "category": "Mexican",
 "location": "Greenpoint, Brooklyn",
-"videos": [
+"videos": JSON.stringify([
 {
 "url": "https://www.tiktok.com/@seewithme_x/video/7627344861070396685",
 "author": "seewithme_x",
 "caption": "Best tacos 🌮",
 "likes": 19
 }
-]
+])
 },
 "geometry": { "type": "Point", "coordinates": [-73.95, 40.73] }
 }
@@ -813,13 +813,16 @@ map.on('click', 'restaurant-points', (e) => {
 const props = e.features[0].properties;
 const coords = e.features[0].geometry.coordinates.slice();
 
+// 🔥 FIX: convert string → array
+const videos = JSON.parse(props.videos);
+
 let videosHTML = '';
 
-props.videos.forEach(video => {
+videos.forEach(video => {
 videosHTML += `
 <div class="tiktok-card">
   <iframe 
-    src="${video.url.replace('/video/', '/embed/')}" 
+    src="https://www.tiktok.com/embed/v2/${video.url.split('/video/')[1]}" 
     width="100%" 
     height="200" 
     frameborder="0"
@@ -827,7 +830,7 @@ videosHTML += `
   </iframe>
   <div class="tiktok-meta">
     <strong>@${video.author}</strong><br>
-    ${video.caption}<br>
+    ${video.caption || ''}<br>
     ❤️ ${video.likes}
   </div>
 </div>
