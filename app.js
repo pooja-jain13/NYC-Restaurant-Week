@@ -26,19 +26,16 @@ const restaurantData = {
 {
 "url": "https://www.tiktok.com/@devourpower/video/7231158637127847214",
 "author": "devourpower",
-"caption": "Wanna know a secret?",
 "likes": 17300
 },
 {
 "url": "https://www.tiktok.com/@duzannyc/video/7149237304664542507",
 "author": "duzannyc",
-"caption": "Crispy wings 🔥",
 "likes": 25400
 },
 {
 "url": "https://www.tiktok.com/@naw_sir/video/7261782354354801966",
 "author": "naw_sir",
-"caption": "Crispy wings 🔥",
 "likes": 1123
 }
 ]
@@ -57,19 +54,16 @@ const restaurantData = {
 {
 "url": "https://www.tiktok.com/@alan_chengg/video/7543817135512980791",
 "author": "alan_chengg",
-"caption": "Wanna know a secret?",
 "likes": 21
 },
 {
 "url": "https://www.tiktok.com/@elda_sinani/video/7029139939883535662",
 "author": "elda_sinani",
-"caption": "Crispy wings 🔥",
 "likes": 9
 },
 {
 "url": "https://www.tiktok.com/@maria.guadagno/video/7108774530180746542",
 "author": "maria.guadagno",
-"caption": "Crispy wings 🔥",
 "likes": 9
 }
 ]
@@ -88,19 +82,16 @@ const restaurantData = {
 {
 "url": "https://www.tiktok.com/@hungryartistny/video/7445068164905340191",
 "author": "hungryartistny",
-"caption": "Wanna know a secret?",
 "likes": 33300
 },
 {
 "url": "https://www.tiktok.com/@kaylee_dharry/video/7086999903053991214",
 "author": "kaylee_dharry",
-"caption": "Crispy wings 🔥",
 "likes": 599
 },
 {
 "url": "https://www.tiktok.com/@shopwips/video/7358154797695946026",
 "author": "shopwips",
-"caption": "Crispy wings 🔥",
 "likes": 28
 }
 ]
@@ -119,19 +110,16 @@ const restaurantData = {
 {
 "url": "https://www.tiktok.com/@priyas_plates/video/7591213033544764685?q=malecon%20restaurant%20nyc&t=17771360392841",
 "author": "priyas_plates",
-"caption": "Wanna know a secret?",
 "likes": 53
 },
 {
 "url": "https://www.tiktok.com/@good.bytes/video/7596849465600773406?q=malecon%20restaurant%20nyc&t=1777136039284",
 "author": "good.bytes",
-"caption": "Crispy wings 🔥",
 "likes": 57000
 },
 {
 "url": "https://www.tiktok.com/@food.and.footprints/video/7563406932640353549?q=malecon%20restaurant%20nyc&t=1777136039284",
 "author": "food.and.footprints",
-"caption": "Crispy wings 🔥",
 "likes": 1621
 }
 ]
@@ -150,19 +138,16 @@ const restaurantData = {
 {
 "url": "https://www.tiktok.com/@meals_by_cug/video/7080561315336621358",
 "author": "meals_by_cug",
-"caption": "Wanna know a secret?",
 "likes": 52400
 },
 {
 "url": "https://www.tiktok.com/@secretsofpowerfulwomen/video/7331505396227525934",
 "author": "secretsofpowerfulwomen",
-"caption": "Crispy wings 🔥",
 "likes": 26
 },
 {
 "url": "https://www.tiktok.com/@ariemmmasgardencenter/video/7585588559231356190",
 "author": "ariemmmasgardencenter",
-"caption": "Crispy wings 🔥",
 "likes": 144
 }
 ]
@@ -181,19 +166,16 @@ const restaurantData = {
 {
 "url": "https://www.tiktok.com/@eatsbynyc/video/7324830008042589482",
 "author": "eatsbynyc",
-"caption": "Wanna know a secret?",
 "likes": 253
 },
 {
 "url": "https://www.tiktok.com/@theerichammer/video/7322145241845239082",
 "author": "theerichammer",
-"caption": "Crispy wings 🔥",
 "likes": 1701
 },
 {
 "url": "https://www.tiktok.com/@christinetao/video/7623946036263914766",
 "author": "christinetao",
-"caption": "Crispy wings 🔥",
 "likes": 751
 }
 ]
@@ -212,19 +194,16 @@ const restaurantData = {
 {
 "url": "https://www.tiktok.com/@beli_eats/video/7360853188079308078",
 "author": "beli_eats",
-"caption": "Wanna know a secret?",
 "likes": 2337
 },
 {
 "url": "https://www.tiktok.com/@thecarboholic/video/7357114467336981802",
 "author": "thecarboholic",
-"caption": "Crispy wings 🔥",
 "likes": 1451
 },
 {
 "url": "https://www.tiktok.com/@inkind.app/video/7607975534554795277",
 "author": "inkind.app",
-"caption": "Crispy wings 🔥",
 "likes": 34
 }
 ]
@@ -243,19 +222,16 @@ const restaurantData = {
 {
 "url": "https://www.tiktok.com/@consumingcouple/video/7081414015112514822",
 "author": "consumingcouple",
-"caption": "Wanna know a secret?",
 "likes": 7086
 },
 {
 "url": "https://www.tiktok.com/@thebingbuzz/video/7435445281472269611",
 "author": "thebingbuzz",
-"caption": "Crispy wings 🔥",
 "likes": 372
 },
 {
 "url": "https://www.tiktok.com/@briancantstopeating/video/7233430116053962026",
 "author": "briancantstopeating",
-"caption": "Crispy wings 🔥",
 "likes": 17000
 }
 ]
@@ -274,19 +250,16 @@ const restaurantData = {
 {
 "url": "https://www.tiktok.com/@melogotjays/video/7353447347172478250",
 "author": "melogotjays",
-"caption": "Wanna know a secret?",
 "likes": 16
 },
 {
 "url": "https://www.tiktok.com/@mr.positivesarmy/video/7364337389583469867",
 "author": "mr.positivesarmy",
-"caption": "Crispy wings 🔥",
 "likes": 14
 },
 {
 "url": "https://www.tiktok.com/@enjoylifewithmichaela/video/7429898773477739819",
 "author": "enjoylifewithmichaela",
-"caption": "Crispy wings 🔥",
 "likes": 11
 }
 ]
@@ -305,19 +278,16 @@ const restaurantData = {
 {
 "url": "https://www.tiktok.com/@beyond.the.square/video/7535862883024997646",
 "author": "beyond.the.square",
-"caption": "Wanna know a secret?",
 "likes": 1628
 },
 {
 "url": "https://www.tiktok.com/@cindyeatsnyc/video/7309072538628328747",
 "author": "cindyeatsnyc",
-"caption": "Crispy wings 🔥",
 "likes": 36900
 },
 {
 "url": "https://www.tiktok.com/@reluctantbites/video/7559513210294947102",
 "author": "reluctantbites",
-"caption": "Crispy wings 🔥",
 "likes": 10100
 }
 ]
@@ -336,19 +306,16 @@ const restaurantData = {
 {
 "url": "https://www.tiktok.com/@sethimaan0/video/7492900424693959982",
 "author": "sethimaan0",
-"caption": "Wanna know a secret?",
 "likes": 490
 },
 {
 "url": "https://www.tiktok.com/@kasey.diary/video/7541076081206414647",
 "author": "kasey.diary",
-"caption": "Crispy wings 🔥",
 "likes": 1426
 },
 {
 "url": "https://www.tiktok.com/@budsonthemove/video/7231760267066051882",
 "author": "budsonthemove",
-"caption": "Crispy wings 🔥",
 "likes": 418
 }
 ]
@@ -367,19 +334,16 @@ const restaurantData = {
 {
 "url": "https://www.tiktok.com/@animayana_/video/7295494282549546282",
 "author": "animayana_",
-"caption": "Wanna know a secret?",
 "likes": 1455
 },
 {
 "url": "https://www.tiktok.com/@tova_haimov/video/7561998002961796407",
 "author": "tova_haimov",
-"caption": "Crispy wings 🔥",
 "likes": 29
 },
 {
 "url": "https://www.tiktok.com/@newyorkbyjenny/video/7425978345977924906",
 "author": "newyorkbyjenny",
-"caption": "Crispy wings 🔥",
 "likes": 602
 }
 ]
@@ -398,19 +362,16 @@ const restaurantData = {
 {
 "url": "https://www.tiktok.com/@hereinnyc/video/7210492073643101486",
 "author": "hereinnyc",
-"caption": "Wanna know a secret?",
 "likes": 12100
 },
 {
 "url": "https://www.tiktok.com/@stoolpresidente/video/7249861588457475370",
 "author": "stoolpresidente",
-"caption": "Crispy wings 🔥",
 "likes": 10700
 },
 {
 "url": "https://www.tiktok.com/@nyjewishweek/video/7281395114021342495",
 "author": "nyjewishweek",
-"caption": "Crispy wings 🔥",
 "likes": 23300
 }
 ]
@@ -429,19 +390,16 @@ const restaurantData = {
 {
 "url": "https://www.tiktok.com/@good.bytes/video/7336594457694850346",
 "author": "good.bytes",
-"caption": "Wanna know a secret?",
 "likes": 1423
 },
 {
 "url": "https://www.tiktok.com/@snackpass/video/7331132950383234346",
 "author": "snackpass",
-"caption": "Crispy wings 🔥",
 "likes": 725
 },
 {
 "url": "https://www.tiktok.com/@comiendoenla/video/7506370543516388650",
 "author": "comiendoenla",
-"caption": "Crispy wings 🔥",
 "likes": 1122
 }
 ]
@@ -460,19 +418,16 @@ const restaurantData = {
 {
 "url": "https://www.tiktok.com/@jacksdiningroom/video/7369992676709682478",
 "author": "jacksdiningroom",
-"caption": "Wanna know a secret?",
 "likes": 514400
 },
 {
 "url": "https://www.tiktok.com/@briancantstopeating/video/7414160028606762286",
 "author": "briancantstopeating",
-"caption": "Crispy wings 🔥",
 "likes": 29300
 },
 {
 "url": "https://www.tiktok.com/@imma_eat_this/video/7494311832497311018",
 "author": "imma_eat_this",
-"caption": "Crispy wings 🔥",
 "likes": 4788
 }
 ]
@@ -491,19 +446,16 @@ const restaurantData = {
 {
 "url": "https://www.tiktok.com/@hungryartistny/video/7206444991915461934",
 "author": "hungryartistny",
-"caption": "Wanna know a secret?",
 "likes": 206
 },
 {
 "url": "https://www.tiktok.com/@eatingwithrobert/video/7485864087084109086",
 "author": "eatingwithrobert",
-"caption": "Crispy wings 🔥",
 "likes": 23900
 },
 {
 "url": "https://www.tiktok.com/@thewildamalia/video/7371213644639538449",
 "author": "thewildamalia",
-"caption": "Crispy wings 🔥",
 "likes": 816
 }
 ]
@@ -522,19 +474,16 @@ const restaurantData = {
 {
 "url": "https://www.tiktok.com/@solissecrets/video/7562976876096916767",
 "author": "solissecrets",
-"caption": "Wanna know a secret?",
 "likes": 357
 },
 {
 "url": "https://www.tiktok.com/@eliteeatswithp/video/7590125551122156814",
 "author": "eliteeatswithp",
-"caption": "Crispy wings 🔥",
 "likes": 563
 },
 {
 "url": "https://www.tiktok.com/@cookiesncreameats/video/7233898253564022059",
 "author": "cookiesncreameats",
-"caption": "Crispy wings 🔥",
 "likes": 145
 }
 ]
@@ -545,9 +494,233 @@ const restaurantData = {
 {
 "type": "Feature",
 "properties": {
+"title": "Papaya Dog",
+"views": 121479,
+"category": "American (Traditional)",
+"location": "109 Eldridge StNew York, NY 10002",
+"videos": [
+{
+"url": "https://www.tiktok.com/@aboricualifeinusa/video/7443998288019344683",
+"author": "aboricualifeinusa",
+"likes": 15
+},
+{
+"url": "https://www.tiktok.com/@robbie.rates/video/7618995180250631455",
+"author": "robbie.rates",
+"likes": 1897
+},
+{
+"url": "https://www.tiktok.com/@foodtok368/video/7535856673546571021",
+"author": "foodtok368",
+"likes": 37100
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [ -73.9922251 , 40.7182218] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Errol’s Caribbean Delights",
+"views": 67103,
+"category": "Caribbean",
+"location": "661 Flatbush AveBrooklyn, NY 11225",
+"videos": [
+{
+"url": "https://www.tiktok.com/@itsyaboymikeofficial/video/7014980678605344005",
+"author": "itsyaboymikeofficial",
+"likes": 3070
+},
+{
+"url": "https://www.tiktok.com/@domikoreana/video/7579819880837385502",
+"author": "domikoreana",
+"likes": 11
+},
+{
+"url": "https://www.tiktok.com/@aprilheree_/video/7565269039199636766",
+"author": "aprilheree_",
+"likes": 4392
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [-73.9599946 , 40.6571284] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Schnipper’s Times Square",
+"views": 13045,
+"category": "American (Traditional)",
+"location": "620 8th Ave, New York, NY 10018",
+"videos": [
+{
+"url": "https://www.tiktok.com/@nycmuncher/video/7426769235117886763",
+"author": "nycmuncher",
+"likes": 47
+},
+{
+"url": "https://www.tiktok.com/@eat_this_1/video/7462138553795972382",
+"author": "eat_this_1",
+"likes": 1203
+},
+{
+"url": "https://www.tiktok.com/@joshuamichaell/video/7623083323690208525",
+"author": "joshuamichaell",
+"likes": 48
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [-73.9903370 , 40.7562689] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Mah-Ze-Dahr Bakery",
+"views": 59920,
+"category": "American (Traditional)",
+"location": "28 Greenwich Ave, New York, NY 10011",
+"videos": [
+{
+"url": "https://www.tiktok.com/@pritokayed/video/7503001700802792735",
+"author": "pritokayed",
+"likes": 1750
+},
+{
+"url": "https://www.tiktok.com/@kamiecrawford/video/7500352962267548959",
+"author": "kamiecrawford",
+"likes": 1546
+},
+{
+"url": "https://www.tiktok.com/@diaryofamaterialgurl/video/7444167177944534303",
+"author": "diaryofamaterialgurl",
+"likes": 4615
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [-74.0000164 , 40.7350283] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Thelewala",
+"views": 19933,
+"category": "Indian",
+"location": "112 MacDougal St, New York, NY 10012",
+"videos": [
+{
+"url": "https://www.tiktok.com/@vatscookin/video/7519300142730595614",
+"author": "vatscookin",
+"likes": 461
+},
+{
+"url": "https://www.tiktok.com/@nycbuddhaeats/video/7223248905897676078",
+"author": "nycbuddhaeats",
+"likes": 66
+},
+{
+"url": "https://www.tiktok.com/@aman.archive/video/7342887293276998918",
+"author": "aman.archive",
+"likes": 78
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [-74.0006936 , 40.7296527] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Naruto Ramen",
+"views": 347223,
+"category": "Japanese / Sushi",
+"location": "1596 3rd Ave, New York, NY 10128",
+"videos": [
+{
+"url": "https://www.tiktok.com/@kenzmyers/video/7611621294920060191",
+"author": "kenzmyers",
+"likes": 96
+},
+{
+"url": "https://www.tiktok.com/@unwordlylike/video/7602651977935342861",
+"author": "unwordlylike",
+"likes": 14600
+},
+{
+"url": "https://www.tiktok.com/@brinks8939/video/7566480740830006583",
+"author": "brinks8939",
+"likes": 7582
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [-73.9524897 , 40.7811956] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Pho Grand",
+"views": 875267,
+"category": "Vietnamese",
+"location": "277C Grand St, New York, NY 10002",
+"videos": [
+{
+"url": "https://www.tiktok.com/@banhmi4.u/video/7555512028576681230",
+"author": "banhmi4.u",
+"likes": 702
+},
+{
+"url": "https://www.tiktok.com/@mablemeetsworld/video/7579393668562308407",
+"author": "mablemeetsworld",
+"likes": 2765
+},
+{
+"url": "https://www.tiktok.com/@grwm_a1ish1a22/video/7613444821553925407",
+"author": "grwm_a1ish1a22",
+"likes": 6
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [-73.9927822 , 40.7176857] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "The Commodore",
+"views": 49082,
+"category": "Southern",
+"location": "366 Metropolitan Ave, Brooklyn, NY 11211",
+"videos": [
+{
+"url": "https://www.tiktok.com/@briancantstopeating/video/7225787135310368046",
+"author": "briancantstopeating",
+"likes": 2537
+},
+{
+"url": "https://www.tiktok.com/@jonathanchoione/video/7124776334093569323",
+"author": "jonathanchoione",
+"likes": 70
+},
+{
+"url": "https://www.tiktok.com/@livefastdineyoung/video/7239709565376384299",
+"author": "livefastdineyoung",
+"likes": 120
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [-73.9558939 , 40.7139049] }
+},
+
+{
+"type": "Feature",
+"properties": {
 "title": "Cheese Grille",
 "views": 83394,
-"category": "comfort",
+"category": "American (Traditional)",
 "location": "188 Allen St, NYC",
 "videos": [
 {
@@ -558,7 +731,7 @@ const restaurantData = {
 }
 ]
 },
-"geometry": { "type": "Point", "coordinates": [-73.988, 40.722] }
+"geometry": { "type": "Point", "coordinates": [ -73.9885928, 40.7219476] }
 },
 
 {
@@ -624,6 +797,7 @@ paint: {
 'Colombian', '#7b1616',
 'Chinese', '#bfff00',
 'American (Traditional)', '#ff7700',
+'Vietnamese', '#650cd9',
 '#888'
 ],
 'circle-stroke-width': 2,
