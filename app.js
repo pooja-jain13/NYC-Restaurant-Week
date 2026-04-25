@@ -204,6 +204,223 @@ const restaurantData = {
 {
 "type": "Feature",
 "properties": {
+"title": "Superiority Burger",
+"views": 174648,
+"category": "Burgers",
+"location": "119 Avenue A, New York, NY 10009",
+"videos": [
+{
+"url": "https://www.tiktok.com/@beli_eats/video/7360853188079308078",
+"author": "beli_eats",
+"caption": "Wanna know a secret?",
+"likes": 2337
+},
+{
+"url": "https://www.tiktok.com/@thecarboholic/video/7357114467336981802",
+"author": "thecarboholic",
+"caption": "Crispy wings 🔥",
+"likes": 1451
+},
+{
+"url": "https://www.tiktok.com/@inkind.app/video/7607975534554795277",
+"author": "inkind.app",
+"caption": "Crispy wings 🔥",
+"likes": 34
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [-73.983509 , 40.726484] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Phayul",
+"views": 56233,
+"category": "Indian",
+"location": "37-65 74th St., Jackson Heights, NY 11372",
+"videos": [
+{
+"url": "https://www.tiktok.com/@consumingcouple/video/7081414015112514822",
+"author": "consumingcouple",
+"caption": "Wanna know a secret?",
+"likes": 7086
+},
+{
+"url": "https://www.tiktok.com/@thebingbuzz/video/7435445281472269611",
+"author": "thebingbuzz",
+"caption": "Crispy wings 🔥",
+"likes": 372
+},
+{
+"url": "https://www.tiktok.com/@briancantstopeating/video/7233430116053962026",
+"author": "briancantstopeating",
+"caption": "Crispy wings 🔥",
+"likes": 17000
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [-73.891349 , 40.7471617] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Full Moon Pizzeria",
+"views": 1351,
+"category": "Italian",
+"location": "600 E 187th St, Bronx, NY 10458",
+"videos": [
+{
+"url": "https://www.tiktok.com/@melogotjays/video/7353447347172478250",
+"author": "melogotjays",
+"caption": "Wanna know a secret?",
+"likes": 16
+},
+{
+"url": "https://www.tiktok.com/@mr.positivesarmy/video/7364337389583469867",
+"author": "mr.positivesarmy",
+"caption": "Crispy wings 🔥",
+"likes": 14
+},
+{
+"url": "https://www.tiktok.com/@enjoylifewithmichaela/video/7429898773477739819",
+"author": "enjoylifewithmichaela",
+"caption": "Crispy wings 🔥",
+"likes": 11
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [-73.887591 , 40.855303] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Pommes Frites",
+"views": 173154,
+"category": "Belgian",
+"location": "128 MacDougal St, New York, NY 10012",
+"videos": [
+{
+"url": "https://www.tiktok.com/@beyond.the.square/video/7535862883024997646",
+"author": "beyond.the.square",
+"caption": "Wanna know a secret?",
+"likes": 1628
+},
+{
+"url": "https://www.tiktok.com/@cindyeatsnyc/video/7309072538628328747",
+"author": "cindyeatsnyc",
+"caption": "Crispy wings 🔥",
+"likes": 36900
+},
+{
+"url": "https://www.tiktok.com/@reluctantbites/video/7559513210294947102",
+"author": "reluctantbites",
+"caption": "Crispy wings 🔥",
+"likes": 10100
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [-74.0002813 , 40.7301222] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Maharaja Sweets and Snacks",
+"views": 4717,
+"category": "Indian",
+"location": "73-10 37th Ave, Jackson Heights, NY 11372",
+"videos": [
+{
+"url": "https://www.tiktok.com/@sethimaan0/video/7492900424693959982",
+"author": "sethimaan0",
+"caption": "Wanna know a secret?",
+"likes": 490
+},
+{
+"url": "https://www.tiktok.com/@kasey.diary/video/7541076081206414647",
+"author": "kasey.diary",
+"caption": "Crispy wings 🔥",
+"likes": 1426
+},
+{
+"url": "https://www.tiktok.com/@budsonthemove/video/7231760267066051882",
+"author": "budsonthemove",
+"caption": "Crispy wings 🔥",
+"likes": 418
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [-73.8923836 , 40.7487772] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Zuma",
+"views": 6212,
+"category": "Japanese/Sushi",
+"location": "261 Madison Ave, New York, NY 10016",
+"videos": [
+{
+"url": "https://www.tiktok.com/@animayana_/video/7295494282549546282",
+"author": "animayana_",
+"caption": "Wanna know a secret?",
+"likes": 1455
+},
+{
+"url": "https://www.tiktok.com/@tova_haimov/video/7561998002961796407",
+"author": "tova_haimov",
+"caption": "Crispy wings 🔥",
+"likes": 29
+},
+{
+"url": "https://www.tiktok.com/@newyorkbyjenny/video/7425978345977924906",
+"author": "newyorkbyjenny",
+"caption": "Crispy wings 🔥",
+"likes": 602
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [73.9807367 , 40.7504423] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Yonah Schimmel Knish Bakery",
+"views": 65770,
+"category": "Eastern European",
+"location": "137 E Houston St, New York, NY 10002",
+"videos": [
+{
+"url": "https://www.tiktok.com/@hereinnyc/video/7210492073643101486",
+"author": "hereinnyc",
+"caption": "Wanna know a secret?",
+"likes": 12100
+},
+{
+"url": "https://www.tiktok.com/@stoolpresidente/video/7249861588457475370",
+"author": "stoolpresidente",
+"caption": "Crispy wings 🔥",
+"likes": 10700
+},
+{
+"url": "https://www.tiktok.com/@nyjewishweek/video/7281395114021342495",
+"author": "nyjewishweek",
+"caption": "Crispy wings 🔥",
+"likes": 23300
+}
+]
+},
+"geometry": { "type": "Point", "coordinates": [-73.989809 , 40.722336] }
+},
+
+{
+"type": "Feature",
+"properties": {
 "title": "Cheese Grille",
 "views": 83394,
 "category": "comfort",
@@ -225,7 +442,7 @@ const restaurantData = {
 "properties": {
 "title": "Calexico",
 "views": 1000,
-"category": "mexican",
+"category": "Mexican",
 "location": "Greenpoint, Brooklyn",
 "videos": [
 {
@@ -275,6 +492,10 @@ paint: {
 'Caribbean', '#b83be9',
 'Latin American', '#e29fbf',
 'Delicatessen', '#9fe2c9',
+'Burgers', '#8b4801',
+'Belgian', '#c8aeff',
+'Japanese/Sushi', '#fffd6b',
+'Eastern European', '#ff5fdc',
 '#888'
 ],
 'circle-stroke-width': 2,
