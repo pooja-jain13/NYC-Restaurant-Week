@@ -785,7 +785,6 @@ paint: {
 'Middle Eastern', '#e63946',
 'Indian', '#0b00a8',
 'Mexican', '#2a9d8f',
-'comfort', '#f4a261',
 'Italian', '#5d6eeb',
 'Caribbean', '#b83be9',
 'Latin American', '#e29fbf',
