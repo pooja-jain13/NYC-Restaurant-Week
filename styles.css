@@ -168,3 +168,10 @@ margin-top: 4px;
   50% { opacity: 1; }
   100% { opacity: 0.2; }
 }
+
+.open-tiktok {
+  display: inline-block;
+  margin-top: 8px;
+  color: #ff0050;
+  font-size: 13px;
+}

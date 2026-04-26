@@ -7,6 +7,11 @@ center: [-73.98, 40.74],
 zoom: 11
 });
 
+function getTikTokID(url) {
+  const match = url.match(/video\/(\d+)/);
+  return match ? match[1] : null;
+}
+
 /* =========================
    RESTAURANT DATA
 ========================= */
@@ -867,21 +872,26 @@ function openModal(videos) {
 
   // Add videos
   videos.forEach(video => {
-    const videoID = video.url.split('/video/')[1].split;
+    const videoID = getTikTokID(video.url);
+    if (!videoID) return; // skip bad ones
 
     const slide = document.createElement('div');
     slide.className = 'carousel-video';
 
-    slide.innerHTML = `
+   slide.innerHTML = `
   <iframe 
-    src="https://www.tiktok.com/embed/v2/${videoID}"
+    src="https://www.tiktok.com/embed/${videoID}"
     width="100%" 
     height="500"
     frameborder="0"
-    allow="autoplay; fullscreen"
     allowfullscreen>
   </iframe>
+
   <div>@${video.author} ❤️ ${video.likes}</div>
+
+  <a href="${video.url}" target="_blank" class="open-tiktok">
+    Watch on TikTok →
+  </a>
 `;
 
     carousel.appendChild(slide);
