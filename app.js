@@ -974,7 +974,7 @@ const restaurantData = {
 "properties": {
 "title": "Spicy Moon - East Village",
 "views": 10509,
-"category": "Vegan",
+"category": "Chinese",
 "location": "328 E 6th StNew York, NY 10003",
 "videos": JSON.stringify([
 {
