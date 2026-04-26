@@ -67,46 +67,84 @@ font-size: 12px;
 margin-top: 4px;
 }
 
-/*modal */
-.modal {
+/* =========================
+   MODAL (VIDEO VIEW)
+========================= */
+#videoModal {
   display: none;
   position: fixed;
   z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.modal-content {
-  background: white;
-}
-
+/* Close button */
 .close {
   position: absolute;
-  right: 20px;
-  top: 10px;
-  font-size: 28px;
+  top: 20px;
+  right: 25px;
+  font-size: 32px;
+  color: white;
   cursor: pointer;
+  z-index: 1000;
 }
 
-/* 👇 THIS makes it a carousel */
+/* =========================
+   CAROUSEL FIX (IMPORTANT)
+========================= */
+
+/* Outer wrapper (controls width + scroll) */
 #carouselWrapper {
+  width: 340px;
+  max-width: 90vw;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  display: flex;
+  scroll-behavior: smooth;
 }
 
+/* Inner track */
 #carousel {
   display: flex;
-  gap: 20px;
-  padding: 20px;
+  gap: 16px;
+  padding: 10px;
 }
 
-/* Each video = full slide */
+/* Each slide */
 .carousel-video {
-  min-width: 300px;
-  flex-shrink: 0;
+  flex: 0 0 100%;
   scroll-snap-align: center;
+  text-align: center;
+}
+
+/* TikTok iframe styling */
+.carousel-video iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 12px;
+}
+
+/* Caption under video */
+.carousel-video div {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* =========================
+   SCROLLBAR (optional clean look)
+========================= */
+#carouselWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+#carouselWrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#carouselWrapper {
+  scroll-behavior: smooth;
 }
