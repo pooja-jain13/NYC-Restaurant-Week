@@ -892,12 +892,12 @@ function openModal(videos) {
   setTimeout(() => {
   const hint = document.getElementById('swipeHint');
   if (hint) hint.style.display = 'none';
-}, 4000);
+}, 8000);
 
   // Auto-hide swipe hint after 4s
   setTimeout(() => {
     hint.style.display = 'none';
-  }, 4000);
+  }, 8000);
 }
 
 

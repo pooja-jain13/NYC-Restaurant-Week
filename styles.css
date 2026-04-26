@@ -160,7 +160,7 @@ margin-top: 4px;
   width: 100%;
   pointer-events: none;
 
-  animation: fadeHint 2s infinite;
+  animation: fadeHint 8s infinite;
 }
 
 @keyframes fadeHint {
