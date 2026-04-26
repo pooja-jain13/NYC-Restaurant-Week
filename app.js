@@ -867,21 +867,22 @@ function openModal(videos) {
 
   // Add videos
   videos.forEach(video => {
-    const videoID = video.url.split('/video/')[1];
+    const videoID = video.url.split('/video/')[1].split;
 
     const slide = document.createElement('div');
     slide.className = 'carousel-video';
 
     slide.innerHTML = `
-      <iframe 
-        src="https://www.tiktok.com/embed/v2/${videoID}" 
-        width="100%" 
-        height="500"
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
-      <div>@${video.author} ❤️ ${video.likes}</div>
-    `;
+  <iframe 
+    src="https://www.tiktok.com/embed/v2/${videoID}"
+    width="100%" 
+    height="500"
+    frameborder="0"
+    allow="autoplay; fullscreen"
+    allowfullscreen>
+  </iframe>
+  <div>@${video.author} ❤️ ${video.likes}</div>
+`;
 
     carousel.appendChild(slide);
   });
