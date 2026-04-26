@@ -771,8 +771,33 @@ map.on('load', () => {
     type: 'circle',
     source: 'restaurants',
     paint: {
-      'circle-radius': 12,
-      'circle-color': '#e63946',
+      'circle-radius': [
+        'interpolate',
+        ['linear'],
+       ['get', 'views'],
+        1000, 8,
+        50000, 18,
+        2000000, 60
+],
+      'circle-color': [
+      'match',
+      ['get', 'category'],
+      'Middle Eastern', '#e63946',
+      'Indian', '#0b00a8',
+      'Mexican', '#2a9d8f',
+      'Italian', '#5d6eeb',
+      'Caribbean', '#b83be9',
+      'Delicatessen', '#9fe2c9',
+      'Burgers', '#8b4801',
+      'Belgian', '#c8aeff',
+      'Japanese/Sushi', '#fffd6b',
+      'Eastern European', '#ff5fdc',
+      'Colombian', '#7b1616',
+      'Chinese', '#bfff00',
+      'American (Traditional)', '#ff7700',
+      'Vietnamese', '#650cd9',
+      '#888'
+      ],
       'circle-stroke-width': 2,
       'circle-stroke-color': '#fff'
     }
