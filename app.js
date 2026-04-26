@@ -647,7 +647,7 @@ const restaurantData = {
 "properties": {
 "title": "Naruto Ramen",
 "views": 347223,
-"category": "Japanese / Sushi",
+"category": "Japanese/Sushi",
 "location": "1596 3rd Ave, New York, NY 10128",
 "videos": JSON.stringify([
 {
@@ -862,7 +862,7 @@ const restaurantData = {
 "properties": {
 "title": "KazuNori",
 "views": 2168093,
-"category": "Japanese / Sushi",
+"category": "Japanese/Sushi",
 "location": "15 W 28th St, New York, NY 10001",
 "videos": JSON.stringify([
 {
@@ -884,7 +884,6 @@ const restaurantData = {
 },
 "geometry": { "type": "Point", "coordinates": [-73.988383 , 40.74515] }
 },
-
 
 {
 "type": "Feature",
@@ -913,6 +912,91 @@ const restaurantData = {
 },
 "geometry": { "type": "Point", "coordinates": [-73.94406 , 40.68331] }
 },
+
+{
+"type": "Feature",
+"properties": {
+"title": "Wattle Cafe",
+"views": 1260,
+"category": "Australian",
+"location": "19 Rector St, New York, NY, 10006",
+"videos": JSON.stringify([
+{
+"url": "https://www.tiktok.com/@j.oann4/video/7097613144326950145",
+"author": "j.oann4",
+"likes": 59
+},
+{
+"url": "https://www.tiktok.com/@wattlecafe/video/7293937438920166687",
+"author": "wattlecafe",
+"likes": 280
+},
+{
+"url": "https://www.tiktok.com/@averagesocialite/video/6941532482822999302",
+"author": "averagesocialite",
+"likes": 595
+}
+])
+},
+"geometry": { "type": "Point", "coordinates": [-74.014142 , 40.708149] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Mangia Madison",
+"views": 9669,
+"category": "Italian",
+"location": "422 Madison Ave, New York, NY, 10017",
+"videos": JSON.stringify([
+{
+"url": "https://www.tiktok.com/@fooodforfooodies/video/7572718340334996767",
+"author": "fooodforfooodies",
+"likes": 1280
+},
+{
+"url": "https://www.tiktok.com/@mangia_nyc/video/7584929681699360055",
+"author": "mangia_nyc",
+"likes": 642
+},
+{
+"url": "https://www.tiktok.com/@kwokdontrun/video/7609128150068399390",
+"author": "kwokdontrun",
+"likes": 420
+}
+])
+},
+"geometry": { "type": "Point", "coordinates": [ -73.977227 , 40.756771] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Spicy Moon - East Village",
+"views": 10509,
+"category": "Vegan",
+"location": "328 E 6th StNew York, NY 10003",
+"videos": JSON.stringify([
+{
+"url": "https://www.tiktok.com/@bodegacatx/video/7206052250475842862",
+"author": "bodegacatx",
+"likes": 587
+},
+{
+"url": "https://www.tiktok.com/@vegnews/video/7603803828583976222",
+"author": "vegnews",
+"likes": 142
+},
+{
+"url": "https://www.tiktok.com/@whitwhitberry/video/7585459003375881486",
+"author": "whitwhitberry",
+"likes": 420
+}
+])
+},
+"geometry": { "type": "Point", "coordinates": [-73.988133 , 40.727031] }
+},
+
 
 {
 "type": "Feature",
@@ -975,6 +1059,8 @@ map.on('load', () => {
       'Chinese', '#bfff00',
       'American (Traditional)', '#ff7700',
       'Vietnamese', '#650cd9',
+      'Southern', '#1ac030',
+      'Australian', '#02c9d0',
       '#888'
       ],
       'circle-stroke-width': 2,
