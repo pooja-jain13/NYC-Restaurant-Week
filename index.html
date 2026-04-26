@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>NYC Restaurant Week Map</title>
+<title>NYC Restaurant Map</title>
 
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 
@@ -22,27 +22,21 @@
   <button class="filter-btn" onclick="setFilter('Italian', this)">Italian</button>
   <button class="filter-btn" onclick="setFilter('Middle Eastern', this)">Middle Eastern</button>
   <button class="filter-btn" onclick="setFilter('Caribbean', this)">Caribbean</button>
-  <button class="filter-btn" onclick="setFilter('Burgers', this)">Burgers</button>
-  <button class="filter-btn" onclick="setFilter('Belgian', this)">Belgian</button>
-  <button class="filter-btn" onclick="setFilter('Japanese/Sushi', this)">Japanese/Sushi</button>
-  <button class="filter-btn" onclick="setFilter('Eastern European', this)">Eastern European</button>
-  <button class="filter-btn" onclick="setFilter('Colombian', this)">Colombian</button>
-  <button class="filter-btn" onclick="setFilter('Chinese', this)">Chinese</button>
-  <button class="filter-btn" onclick="setFilter('American (Traditional)', this)">American (Traditional)</button>
-  <button class="filter-btn" onclick="setFilter('Vietnamese', this)">Vietnamese</button>
 </div>
 
 <!-- MAP -->
 <div id="map"></div>
 
-<script src="app.js"></script>
-
-</body>
-</html>
-
+<!-- ✅ MODAL (THIS WAS YOUR BUG BEFORE) -->
 <div id="videoModal" class="modal">
   <div class="modal-content">
     <span class="close-btn" onclick="closeModal()">&times;</span>
     <div id="carousel"></div>
   </div>
 </div>
+
+<!-- ✅ JS LOADS LAST -->
+<script src="app.js"></script>
+
+</body>
+</html>

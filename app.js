@@ -759,87 +759,72 @@ const restaurantData = {
 /* =========================
    MAP LOAD
 ========================= */
-
 map.on('load', () => {
 
-map.addSource('restaurants', {
-type: 'geojson',
-data: restaurantData
+  map.addSource('restaurants', {
+    type: 'geojson',
+    data: restaurantData
+  });
+
+  map.addLayer({
+    id: 'restaurant-points',
+    type: 'circle',
+    source: 'restaurants',
+    paint: {
+      'circle-radius': 12,
+      'circle-color': '#e63946',
+      'circle-stroke-width': 2,
+      'circle-stroke-color': '#fff'
+    }
+  });
+
+  /* =========================
+     POPUP
+  ========================= */
+  map.on('click', 'restaurant-points', (e) => {
+
+    const props = e.features[0].properties;
+    const coords = e.features[0].geometry.coordinates.slice();
+
+    const videos = JSON.parse(props.videos);
+    const firstVideo = videos[0];
+    const videoID = firstVideo.url.split('/video/')[1];
+
+    const popupNode = document.createElement('div');
+
+    popupNode.innerHTML = `
+      <div>
+        <div class="popup-title">${props.title}</div>
+        <div class="popup-location">${props.location}</div>
+
+        <iframe 
+          src="https://www.tiktok.com/embed/v2/${videoID}" 
+          width="100%" 
+          height="220"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+
+        <button class="more-btn">More Videos →</button>
+      </div>
+    `;
+
+    /* 🔥 THIS is the correct event binding */
+    popupNode.querySelector('.more-btn').onclick = () => {
+      openModal(videos);
+    };
+
+    new mapboxgl.Popup()
+      .setLngLat(coords)
+      .setDOMContent(popupNode)
+      .addTo(map);
+  });
+
 });
-
-map.addLayer({
-id: 'restaurant-points',
-type: 'circle',
-source: 'restaurants',
-paint: {
-      'circle-radius': [
-        'interpolate',
-        ['linear'],
-        ['get', 'views'], // Access the "views" property from your data
-        1000, 10,           // If views are 0, radius is 2px
-        2000000, 60           // If views are 1000, radius grows to 20px
-      ],
-'circle-color': [
-'match',
-['get', 'category'],
-'Middle Eastern', '#e63946',
-'Indian', '#0b00a8',
-'Mexican', '#2a9d8f',
-'Italian', '#5d6eeb',
-'Caribbean', '#b83be9',
-'Latin American', '#e29fbf',
-'Delicatessen', '#9fe2c9',
-'Burgers', '#8b4801',
-'Belgian', '#c8aeff',
-'Japanese/Sushi', '#fffd6b',
-'Eastern European', '#ff5fdc',
-'Colombian', '#7b1616',
-'Chinese', '#bfff00',
-'American (Traditional)', '#ff7700',
-'Vietnamese', '#650cd9',
-'#888'
-],
-'circle-stroke-width': 2,
-'circle-stroke-color': '#fff'
-}
-});
-
-function openModal(videos) {
-
-const modal = document.getElementById('videoModal');
-const carousel = document.getElementById('carousel');
-
-carousel.innerHTML = '';
-
-videos.forEach(video => {
-
-const videoID = video.url.split('/video/')[1];
-
-carousel.innerHTML += `
-<div class="carousel-video">
-  <iframe 
-    src="https://www.tiktok.com/embed/v2/${videoID}" 
-    width="100%" 
-    height="300"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-  <div>@${video.author} ❤️ ${video.likes}</div>
-</div>
-`;
-});
-
-modal.style.display = 'block';
-}
-
-function closeModal() {
-document.getElementById('videoModal').style.display = 'none';
-}
 
 /* =========================
-   MODAL FUNCTIONS
+   MODAL
 ========================= */
-
 function openModal(videos) {
   const modal = document.getElementById('videoModal');
   const carousel = document.getElementById('carousel');
@@ -871,69 +856,11 @@ function closeModal() {
 }
 
 /* =========================
-   POPUP
+   FILTER UI ONLY
 ========================= */
-
-map.on('click', 'restaurant-points', (e) => {
-
-  const props = e.features[0].properties;
-  const coords = e.features[0].geometry.coordinates.slice();
-
-  /* 🔥 IMPORTANT FIX */
-  const videos = JSON.parse(props.videos);
-
-  const firstVideo = videos[0];
-  const videoID = firstVideo.url.split('/video/')[1];
-
-  const popupNode = document.createElement('div');
-
-  popupNode.innerHTML = `
-    <div>
-      <div class="popup-title">${props.title}</div>
-      <div class="popup-location">${props.location}</div>
-
-      <iframe 
-        src="https://www.tiktok.com/embed/v2/${videoID}" 
-        width="100%" 
-        height="220" 
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
-
-      <button class="more-btn">
-        More Videos →
-      </button>
-    </div>
-  `;
-
-  /* ✅ Attach event BEFORE adding to map (better than setTimeout) */
-  popupNode.querySelector('.more-btn').onclick = () => {
-    openModal(videos);
-  };
-
-  new mapboxgl.Popup()
-    .setLngLat(coords)
-    .setDOMContent(popupNode) // 🔥 THIS avoids timing issues
-    .addTo(map);
-
-});
-});
-
-/* =========================
-   FILTER FUNCTION
-========================= */
-
 function setFilter(category, btn) {
+  document.querySelectorAll('.filter-btn')
+    .forEach(b => b.classList.remove('active'));
 
-if (category === 'all') {
-map.setFilter('restaurant-points', null);
-} else {
-map.setFilter('restaurant-points', ['==', ['get', 'category'], category]);
-}
-
-/* Active button UI */
-document.querySelectorAll('.filter-btn')
-.forEach(b => b.classList.remove('active'));
-
-btn.classList.add('active');
+  btn.classList.add('active');
 }
