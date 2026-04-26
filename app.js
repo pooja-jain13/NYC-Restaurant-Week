@@ -748,6 +748,175 @@ const restaurantData = {
 {
 "type": "Feature",
 "properties": {
+"title": "Naya - Midtown East Third Avenue",
+"views": 3062,
+"category": "Middle Eastern",
+"location": "6th Ave & W 53rd StNew York, NY 10019",
+"videos": JSON.stringify([
+{
+"url": "https://www.tiktok.com/@locdin2dathrift/video/7622004680419314957",
+"author": "locdin2dathrift",
+"likes": 19
+},
+{
+"url": "https://www.tiktok.com/@sexiiiting/video/7586781162358525197",
+"author": "sexiiiting",
+"likes": 126
+},
+{
+"url": "https://www.tiktok.com/@vedaaaaa7/video/7506596824673701150",
+"author": "vedaaaaa7",
+"likes": 80
+}
+])
+},
+"geometry": { "type": "Point", "coordinates": [-73.978770 , 40.761980] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Tacombi @ Fonda Nolita",
+"views": 91847,
+"category": "Mexican",
+"location": "42-08 30th Ave.Astoria, NY 11103",
+"videos": JSON.stringify([
+{
+"url": "https://www.tiktok.com/@casserolebites/video/7426357155613183278",
+"author": "casserolebites",
+"likes": 25400
+},
+{
+"url": "https://www.tiktok.com/@traveleen_gurl/video/7603226253394464030",
+"author": "traveleen_gurl",
+"likes": 42
+},
+{
+"url": "https://www.tiktok.com/@niafromnyc/video/7449061962832481582",
+"author": "niafromnyc",
+"likes": 1226
+}
+])
+},
+"geometry": { "type": "Point", "coordinates": [-73.9131534 , 40.7628952] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Golda",
+"views": 4432,
+"category": "American (Traditional)",
+"location": "504 Franklin Ave, Brooklyn, NY, United States, 11238",
+"videos": JSON.stringify([
+{
+"url": "https://www.tiktok.com/@lysswthelenz/video/7543445493167312183",
+"author": "lysswthelenz",
+"likes": 1240
+},
+{
+"url": "https://www.tiktok.com/@lysswthelenz/video/7543419917803080974",
+"author": "lysswthelenz",
+"likes": 450
+},
+{
+"url": "https://www.tiktok.com/@_justemela_/video/6936565637514939653",
+"author": "_justemela_",
+"likes": 890
+}
+])
+},
+"geometry": { "type": "Point", "coordinates": [-73.9559828 , 40.6815381] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "RedFarm - West Village",
+"views": 12241,
+"category": "Chinese",
+"location": "529 Hudson St, Manhattan, NY, 10014",
+"videos": JSON.stringify([
+{
+"url": "https://www.tiktok.com/@sisterhoodtravelingfork/video/7606002737959996685",
+"author": "sisterhoodtravelingfork",
+"likes": 2105
+},
+{
+"url": "https://www.tiktok.com/@myjobiscity/video/7501698883362376991",
+"author": "myjobiscity",
+"likes": 842
+},
+{
+"url": "https://www.tiktok.com/@caseyshappyhealthy/video/7499137172885359903",
+"author": "caseyshappyhealthy",
+"likes": 430
+}
+])
+},
+"geometry": { "type": "Point", "coordinates": [-74.006003 , 40.733979] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "KazuNori",
+"views": 2168093,
+"category": "Japanese / Sushi",
+"location": "15 W 28th St, New York, NY 10001",
+"videos": JSON.stringify([
+{
+"url": "https://www.tiktok.com/@dulasdiningdiaries/video/7587187733676772639",
+"author": "dulasdiningdiaries",
+"likes": 1997
+},
+{
+"url": "https://www.tiktok.com/@momentswithmt/video/7314214080435326251",
+"author": "momentswithmt",
+"likes": 835
+},
+{
+"url": "https://www.tiktok.com/@simplytastybites/video/7355494868107431210",
+"author": "simplytastybites",
+"likes": 573
+}
+])
+},
+"geometry": { "type": "Point", "coordinates": [-73.988383 , 40.74515] }
+},
+
+
+{
+"type": "Feature",
+"properties": {
+"title": "Peaches HotHouse",
+"views": 33634,
+"category": "Southern",
+"location": "415 Tompkins Ave, Brooklyn, NY, 11216",
+"videos": JSON.stringify([
+{
+"url": "https://www.tiktok.com/@mostasting/video/7521176492751981855",
+"author": "mostasting",
+"likes": 51900
+},
+{
+"url": "https://www.tiktok.com/@nyccheatdayking/video/7157126545046408494",
+"author": "nyccheatdayking",
+"likes": 1177
+},
+{
+"url": "https://www.tiktok.com/@itsjulianmu/video/7466974511422901534",
+"author": "itsjulianmu",
+"likes": 235200
+}
+])
+},
+"geometry": { "type": "Point", "coordinates": [-73.94406 , 40.68331] }
+},
+
+{
+"type": "Feature",
+"properties": {
 "title": "Calexico",
 "views": 1000,
 "category": "Mexican",
