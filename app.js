@@ -7,9 +7,15 @@ center: [-73.98, 40.74],
 zoom: 11
 });
 
-function getTikTokID(url) {
-  const match = url.match(/video\/(\d+)/);
-  return match ? match[1] : null;
+function openModal(videos) {
+  const modal = document.getElementById('videoModal');
+
+  modal.style.display = 'flex';
+
+  currentVideos = videos;
+  currentIndex = 0;
+
+  renderVideo();
 }
 
 /* =========================
@@ -817,7 +823,7 @@ map.on('load', () => {
 
     const videos = JSON.parse(props.videos);
     const firstVideo = videos[0];
-    const videoID = firstVideo.url.split('/video/')[1];
+    const videoID = getTikTokID(firstVideo.url);
 
     const popupNode = document.createElement('div');
 
@@ -827,7 +833,7 @@ map.on('load', () => {
         <div class="popup-location">${props.location}</div>
 
         <iframe 
-          src="https://www.tiktok.com/embed/v2/${videoID}" 
+          src="https://www.tiktok.com/embed/${videoID}"
           width="100%" 
           height="220"
           frameborder="0"
@@ -852,68 +858,82 @@ map.on('load', () => {
 });
 
 /* =========================
-   MODAL + CAROUSEL SCRIPT
+   MODAL + ONE VIDEO AT A TIME
 ========================= */
+
+let currentIndex = 0;
+let currentVideos = [];
+
+function getTikTokID(url) {
+  const match = url.match(/video\/(\d+)/);
+  return match ? match[1] : null;
+}
 
 function openModal(videos) {
   const modal = document.getElementById('videoModal');
-  const carousel = document.getElementById('carousel');
   const closeBtn = document.querySelector('.close');
   const hint = document.getElementById('swipeHint');
 
-  // Show modal properly (centered)
   modal.style.display = 'flex';
-
-  // Show close button
   closeBtn.style.display = 'block';
 
-  // Reset carousel
-  carousel.innerHTML = '';
+  currentVideos = videos;
+  currentIndex = 0;
 
-  // Add videos
-  videos.forEach(video => {
-    const videoID = getTikTokID(video.url);
-    if (!videoID) return; // skip bad ones
+  renderVideo();
 
-    const slide = document.createElement('div');
-    slide.className = 'carousel-video';
-
-   slide.innerHTML = `
-  <iframe 
-    src="https://www.tiktok.com/embed/${videoID}"
-    width="100%" 
-    height="500"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-
-  <div>@${video.author} ❤️ ${video.likes}</div>
-
-  <a href="${video.url}" target="_blank" class="open-tiktok">
-    Watch on TikTok →
-  </a>
-`;
-
-    carousel.appendChild(slide);
-  });
-
-  // Show swipe hint
   hint.style.display = 'block';
-  setTimeout(() => {
-  const hint = document.getElementById('swipeHint');
-  if (hint) hint.style.display = 'none';
-}, 8000);
 
-  // Auto-hide swipe hint after 4s
   setTimeout(() => {
     hint.style.display = 'none';
   }, 8000);
 }
 
+function renderVideo() {
+  const carousel = document.getElementById('carousel');
+  const video = currentVideos[currentIndex];
+  const videoID = getTikTokID(video.url);
 
-/* =========================
-   CLOSE MODAL
-========================= */
+  if (!videoID) return;
+
+  carousel.innerHTML = `
+    <div class="carousel-video">
+      <iframe 
+        src="https://www.tiktok.com/embed/${videoID}"
+        width="100%" 
+        height="500"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+
+      <div>@${video.author} ❤️ ${video.likes}</div>
+
+      <a href="${video.url}" target="_blank" class="open-tiktok">
+        Watch on TikTok →
+      </a>
+
+      <div class="nav-buttons">
+        <button onclick="prevVideo()">←</button>
+        <span>${currentIndex + 1} / ${currentVideos.length}</span>
+        <button onclick="nextVideo()">→</button>
+      </div>
+    </div>
+  `;
+}
+
+function nextVideo() {
+  if (currentIndex < currentVideos.length - 1) {
+    currentIndex++;
+    renderVideo();
+  }
+}
+
+function prevVideo() {
+  if (currentIndex > 0) {
+    currentIndex--;
+    renderVideo();
+  }
+}
 
 function closeModal() {
   const modal = document.getElementById('videoModal');
@@ -922,11 +942,6 @@ function closeModal() {
   modal.style.display = 'none';
   closeBtn.style.display = 'none';
 }
-
-
-/* =========================
-   OPTIONAL: CLICK OUTSIDE TO CLOSE
-========================= */
 
 window.onclick = function(e) {
   const modal = document.getElementById('videoModal');
