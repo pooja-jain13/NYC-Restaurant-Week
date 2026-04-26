@@ -776,7 +776,6 @@ map.on('load', () => {
         ['linear'],
        ['get', 'views'],
         1000, 8,
-        50000, 18,
         2000000, 60
 ],
       'circle-color': [
@@ -884,6 +883,14 @@ function closeModal() {
    FILTER UI ONLY
 ========================= */
 function setFilter(category, btn) {
+
+  if (category === 'all') {
+    map.setFilter('restaurant-points', null);
+  } else {
+    map.setFilter('restaurant-points', ['==', ['get', 'category'], category]);
+  }
+
+  // UI highlight
   document.querySelectorAll('.filter-btn')
     .forEach(b => b.classList.remove('active'));
 
