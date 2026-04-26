@@ -847,14 +847,25 @@ map.on('load', () => {
 });
 
 /* =========================
-   MODAL
+   MODAL + CAROUSEL SCRIPT
 ========================= */
+
 function openModal(videos) {
   const modal = document.getElementById('videoModal');
   const carousel = document.getElementById('carousel');
+  const closeBtn = document.querySelector('.close');
+  const hint = document.getElementById('swipeHint');
 
+  // Show modal properly (centered)
+  modal.style.display = 'flex';
+
+  // Show close button
+  closeBtn.style.display = 'block';
+
+  // Reset carousel
   carousel.innerHTML = '';
 
+  // Add videos
   videos.forEach(video => {
     const videoID = video.url.split('/video/')[1];
 
@@ -864,8 +875,8 @@ function openModal(videos) {
     slide.innerHTML = `
       <iframe 
         src="https://www.tiktok.com/embed/v2/${videoID}" 
-        width="300" 
-        height="400"
+        width="100%" 
+        height="500"
         frameborder="0"
         allowfullscreen>
       </iframe>
@@ -875,12 +886,43 @@ function openModal(videos) {
     carousel.appendChild(slide);
   });
 
-  modal.style.display = 'block';
+  // Show swipe hint
+  hint.style.display = 'block';
+  setTimeout(() => {
+  const hint = document.getElementById('swipeHint');
+  if (hint) hint.style.display = 'none';
+}, 4000);
+
+  // Auto-hide swipe hint after 4s
+  setTimeout(() => {
+    hint.style.display = 'none';
+  }, 4000);
 }
 
+
+/* =========================
+   CLOSE MODAL
+========================= */
+
 function closeModal() {
-  document.getElementById('videoModal').style.display = 'none';
+  const modal = document.getElementById('videoModal');
+  const closeBtn = document.querySelector('.close');
+
+  modal.style.display = 'none';
+  closeBtn.style.display = 'none';
 }
+
+
+/* =========================
+   OPTIONAL: CLICK OUTSIDE TO CLOSE
+========================= */
+
+window.onclick = function(e) {
+  const modal = document.getElementById('videoModal');
+  if (e.target === modal) {
+    closeModal();
+  }
+};
 
 /* =========================
    FILTER UI ONLY
